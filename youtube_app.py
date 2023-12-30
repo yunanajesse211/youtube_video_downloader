@@ -3,6 +3,7 @@ from pytube import YouTube
 
 class YouTubeDownloader:
     def __init__(self):
+        st.set_page_config(page_title='JC Youtube downloader', page_icon=':tv:')
         st.title("YouTube Video Downloader")
         self.url = st.text_input("Enter YouTube Video URL:")
         self.resolutions = ["2160p","1440p","1080p","720p", "360p", "240p"]
